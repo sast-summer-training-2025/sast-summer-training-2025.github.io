@@ -1,20 +1,20 @@
-name: deploy 
+name: deploy
 on:
   push:
-    branches: 
+    branches:
       - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
         with:
-          fetch-depth: 0
-          submodules: 'true'
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.x
+          python-version: "3.x"
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: mkdocs build --site-dir ./public
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
