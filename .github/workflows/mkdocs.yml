@@ -1,18 +1,29 @@
-name: deploy 
+name: deploy
+
 on:
   push:
-    branches: 
+    branches:
       - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
           submodules: 'true'
+
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
+
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
+
+      - name: Deploy with mkdocs
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          mkdocs gh-deploy --force --remote-name origin --remote-branch gh-pages
