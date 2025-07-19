@@ -1,0 +1,12 @@
+[submodule "docs/basic/linux_git"]
+	path = docs/basic/linux_git
+	url = git@github.com:sast-summer-training-2024/sast-linux-git.git
+[submodule "docs/ai/neural-network"]
+	path = docs/ai/neural-network
+	url = git@github.com:sast-summer-training-2024/sast2024-neural-network.git
+[submodule "docs/backend/django"]
+	path = docs/backend/django
+	url = git@github.com:sast-summer-training-2024/sast2024-django.git
+[submodule "docs/ai/sast2024-optimization"]
+	path = docs/ai/sast2024-optimization
+	url = https://github.com/sast-summer-training-2024/sast2024-optimization

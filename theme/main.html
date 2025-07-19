@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+    {{ super() }}
+    <script type="text/javascript">
+        document.querySelectorAll('a[href^="http"]').forEach(link => {
+            link.setAttribute('referrerpolicy', 'no-referrer');
+            link.setAttribute('target', '_blank');
+        });
+    </script>
+{% endblock %}
+
+{% block content %}
+    {{ super() }}
+    {% if git_page_authors %}
+        <div class="md-source-date">
+            <small>
+                作者: {{ git_page_authors | default('enable mkdocs-git-authors-plugin') }}
+            </small>
+        </div>
+    {% endif %}
+{% endblock %}
