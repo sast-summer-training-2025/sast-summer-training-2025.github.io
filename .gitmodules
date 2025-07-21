@@ -1,0 +1,3 @@
+[submodule "docs/ai/nn_torch"]
+	path = docs/ai/nn_torch
+	url = https://github.com/yks23/nn-and-pytorch.git
