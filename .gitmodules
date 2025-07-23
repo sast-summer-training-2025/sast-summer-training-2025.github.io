@@ -1,3 +1,6 @@
 [submodule "docs/ai/nn_torch"]
 	path = docs/ai/nn_torch
 	url = https://github.com/yks23/nn-and-pytorch.git
+[submodule "docs/ai/nlp&LLM"]
+	path = docs/ai/nlp&LLM
+	url = https://github.com/MuZhao2333/Homework-NLP-LLM.git
