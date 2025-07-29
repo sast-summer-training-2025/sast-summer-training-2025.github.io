@@ -9,7 +9,7 @@
 **Linux** 也是自由软件和开放源代码软件发展中最著名的例子，只要遵循 GNU，任何个人和机构都可以自由地使用 Linux 的所有底层源代码，这使得它得到来自全世界软件爱好者和组织的开发支持。
 
 <p align="center">
-    <img src="./images/Linux.png" alt="Linux" width="200"/>
+    <img src="/basic/linux&git/images/Linux.png" alt="Linux" width="200"/>
 </p>
 
 
@@ -109,7 +109,7 @@ Shell 分为图形界面和命令行界面两种，比如 Windows 的文件浏�
     **Terminal**：终端的名字来源于它在用户和机器交互过程中所处的位置：用户在终端输入、机器通过终端输出，现在我们已经不再需要专门的硬件充当终端，而是利用一个程序来模拟其行为。当我们打开一个终端模拟器（如 Windows 的 cmd，Linux 的 Konsole、gnome-terminal）时，一个 Shell 随即被运行，我们就可以通过这个 Shell 所提供的 CLI 输入指令了。
 
 <p align="center">
-    <img src="./images/Shell.png" alt="Linux" width="400"/>
+    <img src="/basic/linux&git/images/Shell.png" alt="Linux" width="400"/>
 </p>
 
 - 推荐大家课后阅读 [SAST skill docs](https://docs.net9.org/basic/linux/#how-does-shell-run-commands) 上关于 How Does Shell Run Commands 的介绍，会帮助大家加深对 Shell 的理解。
@@ -133,7 +133,7 @@ Shell 分为图形界面和命令行界面两种，比如 Windows 的文件浏�
     用户登录 Linux 系统，默认会进入 `~` 目录，这里 `~` 指代的就是`home/<your_username>`，也就是你的用户所归属的目录，与你用户有关的所有文件（如下载的软件，配置的环境，ssh的密钥）也都将存放在这个目录下。
 
     <p align="center">
-        <img src="./images/Tree.png" alt="Linux" width="800"/>
+        <img src="/basic/linux&git/images/Tree.png" alt="Linux" width="800"/>
     </p>
 
     - `/`：根目录；
@@ -252,7 +252,7 @@ tmux kill-session -t <session-name>
 ```
 
 <p align="center">
-    <img src="./images/tmux.gif" alt="Linux" width="600"/>
+    <img src="/basic/linux&git/images/tmux.gif" alt="Linux" width="600"/>
 </p>
 
 tmux 由会话（session），窗口（window），面板（pane）组织起每个 shell 的输入框。会话用于区分不同的工作；窗口是会话中以显示屏为单位的不同的页；而面板则是一个窗口上被白线分割的不同区域。熟练掌握会话，窗口，面板之间的切换，可以极大提高使用效率。
@@ -333,7 +333,7 @@ drwxrwxr-x 2 ustc ustc 4096 Feb  3 22:38 a_folder
 第三、四列为文件所属用户和用户组。
 
 <p align="center">
-    <img src="./images/privilege.jpg" alt="Linux" width="600"/>
+    <img src="/basic/linux&git/images/privilege.jpg" alt="Linux" width="600"/>
 </p>
 
 例如，上面的文件 `a_file` 为普通文件 (`-`)，所属用户权限为 `rwx`，所属用户组权限为 `rw-`，其他人的权限为 `r--`，文件所属用户和用户组均为 `ustc`。
