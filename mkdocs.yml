@@ -93,6 +93,12 @@ nav:
     - AI Track: ai/index_ai.md
   - 基础:
     - basic/index_basic.md
+    - Linux & Git:
+      - Linux: basic/linux&git/Linux.md
+      - Git: basic/linux&git/Git.md
+      - 拓展资料: basic/linux&git/Extend.md
+      - 基本操作(部分): basic/linux&git/ShellOperations.md
+      - 课程回放: /
   - 前端:
     - frontend/index_frontend.md
   - 后端:
