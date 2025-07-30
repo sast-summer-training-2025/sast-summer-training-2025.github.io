@@ -101,7 +101,7 @@ Linux 系统使用场景众多，安装流程根据发行版也各不相同，�
     
 Shell 分为图形界面和命令行界面两种，比如 Windows 的文件浏览器、程序管理器都可以算是 GUI Shell，但用 Linux 时我们一般说的都是 CLI Shell。
 
-许多 Linux 发行版同样有着跟 Windows 和 Mac 一样直观易上手的图形界面（GUI, Graphical User Interface），但是通过 CLI （Command-Line Interface）可以更加和底层地接触到 Linux 系统。我们也将提供 CLI 的程序称为**终端（Terminal）**
+许多 Linux 发行版同样有着跟 Windows 和 Mac 一样直观易上手的图形界面（GUI, Graphical User Interface），但是通过 CLI （Command-Line Interface）可以更加直接和底层地接触到 Linux 系统。我们也将提供 CLI 的程序称为**终端（Terminal）**。
 !!! note
     
     **Shell**：常见的 Shell 包括 sh、bash、zsh、fish 等。
