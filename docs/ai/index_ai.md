@@ -11,3 +11,5 @@
 ## 图神经网络
 - [课程视频与PPT](https://cloud.tsinghua.edu.cn/d/fa01affe330a4f178cd8/) 
 - [课程作业](https://github.com/MuZhao2333/HW-GNN)
+
+## 生成式模型基础
