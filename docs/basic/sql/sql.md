@@ -108,8 +108,9 @@ PostgreSQL 官网提供了非常全面的[技术文档](https://www.postgresql.o
 考虑到官方文档庞大的体量和阅读难度，本讲将会结合[该入门练习](https://pgexercises.com)的部分例子，对照着文档循序渐进地进行部分 SQL 指令的讲解，**在运用中学习是一个很好的学习方式**。
 
 - 提供给大家练习用的 sql 脚本：
-  - [一个学生、课程关系的数据库](/basic/sql/Practice/summer.sql)
-  - [来自于 PostgreSQL Exercises 上的会员、设施、预订关系的数据库](/basic/sql/Practice/clubdata.sql)
+
+    - [一个学生、课程关系的数据库](/basic/sql/Practice/summer.sql)
+    - [来自于 PostgreSQL Exercises 上的会员、设施、预订关系的数据库](/basic/sql/Practice/clubdata.sql)
 
 ### 基本概念
 
