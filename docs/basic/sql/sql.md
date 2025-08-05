@@ -140,6 +140,11 @@ SQL 是一种声明式语言，用户只需描述“想要什么”，而不需�
 - 脚本语言（类似 Python）：可以交互执行也可以事先写好后一次性执行；
 - 强类型（区别于 MySQL 的弱类型）
 
+<p align="center">
+    <img src="/basic/sql/Practice/MySQL.jpg" alt="MySQL" width="45%"/>
+    <img src="/basic/sql/Practice/PostgreSQL.png" alt="PostgreSQL" width="60%"/>
+</p>
+
 在 PostgreSQL 中，有关大小写的区分：
 
 - SQL 关键字：不区分大小写（如 SELECT, FROM, WHERE）。
