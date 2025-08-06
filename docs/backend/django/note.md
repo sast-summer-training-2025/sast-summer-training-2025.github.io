@@ -1,4 +1,3 @@
-
 # 课程讲义：Django
 
 ## 从前后端分离说起
@@ -427,9 +426,14 @@ Django 提供了强大的测试框架，用于编写和运行测试用例，确�
 6. **使用适当的断言**: 选择最合适的断言方法
 7. **测试覆盖率**: 使用coverage工具检查测试覆盖率
 
+## 演示代码
+
+- 查阅演示代码请[点此访问](https://github.com/sast-summer-training-2025/django-demo)
+- 对Django框架感兴趣的同学可以尝试将接口统一为向前端返回数据与信息的模式，也可以尝试编写一些测试用例~
+
 ## 参考资料
 
 - [Django官方文档](https://docs.djangoproject.com/en/5.2/)
 - [维基百科](https://zh.wikipedia.org/wiki/Django)
-- [酒井科协 & 算协联合暑培 2024 - Django](https://summer23.net9.org/backend/django/django/)
+- [酒井科协 &amp; 算协联合暑培 2024 - Django](https://summer23.net9.org/backend/django/django/)
 - 注：本文档及演示代码中包含了部分AI生成内容及个人理解，如有错误或不当之处请指正。
