@@ -15,4 +15,4 @@
 
 ## 数据库 & SQL
 - [课程讲义](/basic/sql/sql)
-- [课程回放](/)
+- [课程回放](https://www.bilibili.com/video/BV1FgtnzVEXF/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520)

@@ -103,10 +103,10 @@ nav:
     - Python:
       - 课前准备: basic/python/prepare.md
       - 课程讲义: basic/python/python.md
-      - 课程回放: /
+      - 课程回放: https://www.bilibili.com/video/BV1TfhbzsEVQ/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
     - 数据库 & SQL: 
       - 课程讲义: basic/sql/sql.md
-      - 课程回放: /
+      - 课程回放: https://www.bilibili.com/video/BV1FgtnzVEXF/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
   - 前端:
     - frontend/index_frontend.md
   - 后端:
