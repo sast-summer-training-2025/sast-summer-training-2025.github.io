@@ -1515,9 +1515,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#windowsmacos" class="md-nav__link">
+  <a href="#windows-macos" class="md-nav__link">
     <span class="md-ellipsis">
-      Windows和MacOS
+      Windows 和 MacOS
     </span>
   </a>
   
@@ -1821,9 +1821,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#windowsmacos" class="md-nav__link">
+  <a href="#windows-macos" class="md-nav__link">
     <span class="md-ellipsis">
-      Windows和MacOS
+      Windows 和 MacOS
     </span>
   </a>
   
@@ -1884,32 +1884,32 @@
 <h1 id="_1">课前准备<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <h2 id="_2">前置知识<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
-<li>了解Linux命令行的基本操作；</li>
+<li>了解 Linux 命令行的基本操作；</li>
 <li>对文件目录有基本的认识。</li>
 </ul>
 <h2 id="_3">环境配置<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="windowsmacos">Windows和MacOS<a class="headerlink" href="#windowsmacos" title="Permanent link">&para;</a></h3>
+<h3 id="windows-macos">Windows 和 MacOS<a class="headerlink" href="#windows-macos" title="Permanent link">&para;</a></h3>
 <p>可以直接从官网下载<a href="https://www.docker.com/">Docker Desktop</a>并安装。</p>
 <h3 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h3>
-<p>以Ubuntu为例，常见的安装方式包括：</p>
+<p>以 Ubuntu 为例，常见的安装方式包括：</p>
 <ul>
-<li>从官网下载<a href="https://www.docker.com/">Docker Desktop</a> Linux版并安装。</li>
+<li>从官网下载 <a href="https://www.docker.com/">Docker Desktop</a> Linux 版并安装。</li>
 <li>按照<a href="https://docs.docker.com/desktop/setup/install/linux/ubuntu/">官方文档</a>的指引安装Docker Desktop。</li>
-<li>按照<a href="https://docs.docker.com/engine/install/ubuntu/">官方文档</a>的指引安装Docker Engine。</li>
+<li>按照<a href="https://docs.docker.com/engine/install/ubuntu/">官方文档</a>的指引安装 Docker Engine。</li>
 </ul>
 <blockquote>
-<p>Docker Engine是Docker Desktop的组成部分之一，也是Docker的核心组件，而Docker Desktop还另外提供了图形界面、Kubernetes集群管理等其他特性。事实上，对于初学者来说，二者的区别几乎只体现在图形界面的有无。Docker Engine足以应对本次课程的内容。</p>
+<p>Docker Engine 是 Docker Desktop 的组成部分之一，也是 Docker 的核心组件，而 Docker Desktop 还另外提供了图形界面、Kubernetes 集群管理等其他特性。事实上，对于初学者来说，二者的区别几乎只体现在图形界面的有无。Docker Engine 足以应对本次课程的内容。</p>
 </blockquote>
-<p>若使用其他Linux发行版，可以参考<a href="https://docs.docker.com/desktop/setup/install/linux/">官方文档</a>中提供的其他Linux发行版的安装方式。</p>
+<p>若使用其他 Linux 发行版，可以参考<a href="https://docs.docker.com/desktop/setup/install/linux/">官方文档</a>中提供的其他 Linux 发行版的安装方式。</p>
 <h2 id="_4">测试环境<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>安装完成后，可以启动Docker Desktop并在命令行中运行<code>docker run --rm hello-world</code>，若输出的内容中含有
+<p>安装完成后，可以启动 Docker Desktop 并在命令行中运行 <code>docker run --rm hello-world</code>，若输出的内容中含有</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Hello<span class="w"> </span>from<span class="w"> </span>Docker!
 This<span class="w"> </span>message<span class="w"> </span>shows<span class="w"> </span>that<span class="w"> </span>your<span class="w"> </span>installation<span class="w"> </span>appears<span class="w"> </span>to<span class="w"> </span>be<span class="w"> </span>working<span class="w"> </span>correctly.
 </code></pre></div></td></tr></table></div>
-证明安装成功。</p>
+<p>证明安装成功。</p>
 <h2 id="_5">提醒<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p>互联网上很多旧的Docker安装教程会提倡在安装Docker后进行换源，但是近来国内Docker镜像站陆续下架，现在依旧可用的镜像源十分罕见，因此不再建议换源。</p>
+<p>互联网上很多旧的 Docker 安装教程会提倡在安装 Docker 后进行换源，但是近来国内 Docker 镜像站陆续下架，现在依旧可用的镜像源十分罕见，因此不再建议换源。</p>
 <p>解决办法是在科学上网（笑）后直接使用默认源，至于如何配置科学上网，就不是（也不能是）课程的内容了，可以自行研究。</p>
 
 
@@ -1931,7 +1931,7 @@ This<span class="w"> </span>message<span class="w"> </span>shows<span class="w">
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年8月7日 07:58:14 UTC">2025年8月7日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年8月7日 08:04:27 UTC">2025年8月7日</span>
   </span>
 
     
