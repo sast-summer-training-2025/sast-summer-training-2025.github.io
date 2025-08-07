@@ -115,6 +115,10 @@ nav:
       - 课前准备: backend/django/prepare.md
       - 课程讲义: backend/django/note.md
       - 演示代码: https://github.com/sast-summer-training-2025/django-demo
+    - Docker:
+      - 课前准备: backend/docker/prepare.md
+      - 课程讲义: backend/docker/note.md
+      - 课程作业: backend/docker/homework.md
   - 游戏:
     - unity/index_unity.md
   - AI:

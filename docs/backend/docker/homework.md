@@ -1,6 +1,6 @@
 # Docker 课程作业
 
-现在有一个简单的 C++ 项目，已提供 Makefile 文件，请基于 `ubuntu:24.04` 构建镜像，运行这个项目。
+现在有一个简单的 [C++ 项目](https://github.com/sast-summer-training-2025/docker-hw)，已提供 Makefile 文件，请基于 `ubuntu:24.04` 构建镜像，运行这个项目。
 
 ## 项目介绍
 
