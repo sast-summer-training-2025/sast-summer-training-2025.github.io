@@ -13,4 +13,5 @@
 - [课前准备](/backend/docker/prepare)
 - [课程讲义](/backend/docker/note)
 - [课程作业](/backend/docker/homework)
-- [课程回放]()
+- [作业答案](/backend/docker/answer)
+- [课程回放](https://cloud.tsinghua.edu.cn/f/064f108348654d058ce9/)
