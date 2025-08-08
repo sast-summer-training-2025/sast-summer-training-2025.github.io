@@ -119,6 +119,9 @@ nav:
       - 课前准备: backend/docker/prepare.md
       - 课程讲义: backend/docker/note.md
       - 课程作业: backend/docker/homework.md
+    - Rust: 
+      - 课程讲义: backend/rust/handout.md
+      - 课程回放: /
   - 游戏:
     - unity/index_unity.md
   - AI:

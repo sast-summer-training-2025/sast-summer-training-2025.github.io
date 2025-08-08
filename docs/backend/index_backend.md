@@ -14,3 +14,8 @@
 - [课程讲义](/backend/docker/note)
 - [课程作业](/backend/docker/homework)
 - [课程回放]()
+
+## Rust
+
+- [课程讲义](/backend/rust/handout)
+- [课程回放](/)
