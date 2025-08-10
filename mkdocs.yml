@@ -98,11 +98,15 @@ nav:
       - Git: basic/linux&git/Git.md
       - 拓展资料: basic/linux&git/Extend.md
       - 基本操作(部分): basic/linux&git/ShellOperations.md
-      - 课程回放: https://www.bilibili.com/video/BV1Hh81z9EG2/?spm_id_from=333.1387.upload.video_card.click&vd_source=a909320ea634844e50442d666d7b77c7
+      - Linux 课程回放: https://www.bilibili.com/video/BV1Hh81z9EM5/?spm_id_from=333.337.search-card.all.click&vd_source=a909320ea634844e50442d666d7b77c7
+      - Git 课程回放: https://www.bilibili.com/video/BV1Hh81z9EG2/?spm_id_from=333.337.search-card.all.click&vd_source=a909320ea634844e50442d666d7b77c7
     - Python:
       - 课前准备: basic/python/prepare.md
       - 课程讲义: basic/python/python.md
-      - 课程回放: /
+      - 课程回放: https://www.bilibili.com/video/BV1TfhbzsEVQ/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
+    - 数据库 & SQL: 
+      - 课程讲义: basic/sql/sql.md
+      - 课程回放: https://www.bilibili.com/video/BV1FgtnzVEXF/?share_source=copy_web&vd_source=5f41358f46c6dc60e03c3ff6ca5a8520
   - 前端:
     - frontend/index_frontend.md
     - Java:
@@ -111,6 +115,17 @@ nav:
       - 课程回放: /
   - 后端:
     - backend/index_backend.md
+    - Django:
+      - 课前准备: backend/django/prepare.md
+      - 课程讲义: backend/django/note.md
+      - 演示代码: https://github.com/sast-summer-training-2025/django-demo
+    - Docker:
+      - 课前准备: backend/docker/prepare.md
+      - 课程讲义: backend/docker/note.md
+      - 课程作业: backend/docker/homework.md
+    - Rust: 
+      - 课程讲义: backend/rust/handout.md
+      - 课程回放: /
   - 游戏:
     - unity/index_unity.md
   - AI:
