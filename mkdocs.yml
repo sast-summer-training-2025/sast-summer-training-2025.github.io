@@ -105,6 +105,10 @@ nav:
       - 课程回放: /
   - 前端:
     - frontend/index_frontend.md
+    - Java:
+      - 课前准备: frontend/java/Environment_Setup.md
+      - 课程讲义: frontend/java/Java_introduction.md
+      - 课程回放: /
   - 后端:
     - backend/index_backend.md
   - 游戏:
