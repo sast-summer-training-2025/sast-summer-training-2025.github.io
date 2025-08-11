@@ -1197,3 +1197,9 @@ public class ThreadControlExample {
     }
 }
 ```
+
+## 参考资料
+
+- 感谢 [Clever_Jimmy](https://github.com/leverimmy) 在 2024 年暑期培训中的 Java 部分的讲义。
+- 感谢许斌老师在2024年暑期小学期java课程中详尽的PPT。
+- 由于示例代码大部分都是用ChatGPT写的，~~所以顺手感谢一下造福人类的OpenAI公司吧。~~
