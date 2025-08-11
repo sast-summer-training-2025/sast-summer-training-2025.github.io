@@ -488,11 +488,11 @@ public class Main{
 - `int age, weight`（变量）
 - `void makeSound()` （方法）
 
-##### 子类的构造函数
+**子类的构造函数**
 
 使用 `super(age, weight)` 明确调用父类构造方法初始化 `age` 和 `weight`，子类自己负责初始化自己的新字段：`color`、`name`
 
-##### 方法重写（Override）
+**方法重写（Override）**
 
 `@Override` 表示子类重写了父类的 `makeSound()` 方法：`Dog` 输出 “Bark.”，`Cat` 输出 “Meow.”，而不是父类默认的 “Make sound”
 
@@ -836,7 +836,7 @@ System.out.println(queue.peek()); // 查看队头
 
 #### HashMap
 
-`HashMap` 用于存储键值对（key-value）映射，位于 `java.util` 包中。每个键（Key）只能出现一次，重复插入会覆盖旧值，而值可以重复，即 多个键可以映射到同一个值
+`HashMap` 用于存储键值对（key-value）映射，位于 `java.util` 包中。每个键（Key）只能出现一次，重复插入会覆盖旧值，而值可以重复，即多个键可以映射到同一个值
 
 ```
 import java.util.HashMap;
@@ -914,19 +914,12 @@ public class HashSetExample {
 利用HashSet的性质可以进行去重：
 
 ```
-import java.util.*;
+        // ArrayList 去重
+        ArrayList<String> list = new ArrayList<>(Arrays.asList("Tom", "Jerry", "Tom", "Anna", "Jerry"));
+        System.out.println("\nOriginal list with duplicates: " + list);
 
-public class RemoveDuplicates {
-    public static void main(String[] args) {
-        List<String> names = Arrays.asList("Tom", "Jerry", "Tom", "Anna", "Jerry");
-
-        // 利用 HashSet 去重
-        Set<String> uniqueNames = new HashSet<>(names);
-
-        System.out.println("Original list: " + names);
-        System.out.println("Unique set: " + uniqueNames);
-    }
-}
+        HashSet<String> uniqueSet = new HashSet<>(list);  // 自动去重
+        System.out.println("Set after removing duplicates: " + uniqueSet);
 ```
 
 ## Object 类
