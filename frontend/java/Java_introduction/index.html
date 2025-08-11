@@ -4377,7 +4377,7 @@ public class HashSetExample {
         System.out.println(&quot;Set after removing duplicates: &quot; + uniqueSet);
 </code></pre></div></td></tr></table></div>
 <h2 id="object">Object 类<a class="headerlink" href="#object" title="Permanent link">&para;</a></h2>
-<p>在 Java 中，<code>Object</code> 类是所有类的基类，也就是说，每一个类（无论是标准库的还是用户自定义的）都直接或间接继承自 <code>java.lang.Object</code>。<code>Object</code> 类提供了一些基本方法，这些方法必须在子类中正确实现，以确保正确处理“判断两个对象是否相等”这一问题。</p>
+<p>在 Java 中，<code>Object</code> 类是所有类的基类，也就是说，每一个类（无论是标准库的还是用户自定义的）都直接或间接继承自 <code>java.lang.Object</code>。<code>Object</code> 类提供了一些基本方法，这些方法必须在子类中正确实现。</p>
 <p>以下介绍几种<code>object</code>类提供的方法：</p>
 <h4 id="tostring">toString()<a class="headerlink" href="#tostring" title="Permanent link">&para;</a></h4>
 <p>默认实现：返回对象的类名 + “@” + 哈希码的十六进制形式。</p>
@@ -4425,8 +4425,7 @@ public class Main {
 }
 </code></pre></div></td></tr></table></div>
 <h4 id="equals">equals()<a class="headerlink" href="#equals" title="Permanent link">&para;</a></h4>
-<p>默认行为：比较对象地址（引用）是否相同，等价于 <code>==</code>。</p>
-<p>通常应当根据对象的内容进行重写：</p>
+<p>用于比较对象的内容是否相同，通常应当根据对象的内容进行重写：</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
@@ -4520,7 +4519,7 @@ double d = Double.parseDouble(&quot;6.28&quot;);
 <p>包装类对象的<strong>比较</strong>要注意以下几点：</p>
 <ul>
 <li>使用 <code>.equals()</code> 比较数值是否相等；</li>
-<li>使用 <code>==</code> 会比较<strong>引用地址</strong>是否相同（128 以内的整数会被缓存）：</li>
+<li>使用 <code>==</code> 会比较<strong>引用地址</strong>是否相同（[-128, 127]以内的整数会被缓存）：</li>
 </ul>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -4557,7 +4556,7 @@ ArrayList&lt;Integer&gt; list = new ArrayList&lt;&gt;();
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>public class WrapperDemo {
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>public class WrapperExample {
     public static void main(String[] args) {
         int x = 10;
         Integer obj = x;  // 自动装箱：int → Integer
@@ -4669,6 +4668,53 @@ public class RunnableDemo {
 <li><strong>阻塞</strong>：例如 <code>sleep()</code>、<code>wait()</code>、等待 I/O 等。</li>
 <li><strong>死亡</strong>：<code>run()</code> 方法执行完毕，或被异常终止。</li>
 </ol>
+<p>以下是线程调度的一些常见方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>start()</code></td>
+<td>启动线程（进入就绪状态，等待 CPU 调度）</td>
+</tr>
+<tr>
+<td><code>run()</code></td>
+<td>线程执行的任务逻辑（通常不直接调用，而是由 <code>start()</code> 内部调用）</td>
+</tr>
+<tr>
+<td><code>sleep(ms)</code></td>
+<td>让当前线程休眠指定毫秒时间</td>
+</tr>
+<tr>
+<td><code>join()</code></td>
+<td>等待指定线程执行完毕后再继续当前线程</td>
+</tr>
+<tr>
+<td><code>yield()</code></td>
+<td>暂时让出 CPU 执行权，让其他线程有机会运行（不保证立即切换）</td>
+</tr>
+<tr>
+<td><code>interrupt()</code></td>
+<td>中断线程（设置中断标志，具体响应需在线程逻辑中检查）</td>
+</tr>
+<tr>
+<td><code>isAlive()</code></td>
+<td>判断线程是否还在运行</td>
+</tr>
+<tr>
+<td><code>getName()</code> / <code>setName()</code></td>
+<td>获取 / 设置线程名字</td>
+</tr>
+<tr>
+<td><code>currentThread()</code></td>
+<td>获取当前正在执行的线程对象</td>
+</tr>
+</tbody>
+</table>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -4775,7 +4821,7 @@ public class RunnableDemo {
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年8月11日 03:52:00 UTC">2025年8月11日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年8月11日 10:00:49 UTC">2025年8月11日</span>
   </span>
 
     
