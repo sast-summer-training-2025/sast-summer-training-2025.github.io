@@ -42,7 +42,7 @@ java YourProgram.java    # 编译 + 运行（部分环境支持）
 
 #### 安装 IDE 
 
-进入https://www.jetbrains.com/toolbox-app/并下载安装 Toolbox（当然，也可以直接点击 License 页面中的对应链接单独下载 IntelliJ IDEA）。大家也可以下载里面的其他软件体验。
+进入https://www.jetbrains.com/toolbox-app并下载安装 Toolbox（当然，也可以直接点击 License 页面中的对应链接单独下载 IntelliJ IDEA）。大家也可以下载里面的其他软件体验。
 
 ### IntelliJ IDEA使用简介
 
@@ -50,5 +50,5 @@ java YourProgram.java    # 编译 + 运行（部分环境支持）
 
 ![image-20250723194749536](./images/3.png)
 
-最后，请将https://github.com/kjcKen/sast_2025_java的仓库clone到本地（~~相信大家都会用git了吧~~）祝大家收获一段愉快的java学习之旅！
+最后，请将https://github.com/kjcKen/sast_2025_java的仓库fork一份，然后将fork的仓库clone到本地（~~相信大家都会用git了吧~~）祝大家收获一段愉快的java学习之旅！
 
