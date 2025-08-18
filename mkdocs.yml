@@ -113,6 +113,10 @@ nav:
       - 课前准备: frontend/java/Environment_Setup.md
       - 课程讲义: frontend/java/Java_introduction.md
       - 课程回放: /
+    - JSTS:
+      - 课前准备: frontend/jsts/prepare.md
+      - 课程讲义: frontend/jsts/note.md
+      - 课程回放: /
   - 后端:
     - backend/index_backend.md
     - Django:
