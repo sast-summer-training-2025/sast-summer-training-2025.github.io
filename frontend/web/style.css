@@ -1,0 +1,100 @@
+/* ===== 1. 通用选择器 * 重置浏览器默认样式 ===== */
+* {
+  margin: 0;        /* 外边距清零 */
+  padding: 0;       /* 内边距清零 */
+  box-sizing: border-box; /* 让 width/height 包含 padding 和 border */
+}
+
+/* ===== 2. body 作为整页背景 ===== */
+body {
+  /* 2-1 背景渐变：linear-gradient(角度, 颜色1, 颜色2) */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  height: 100vh;        /* vh = viewport height，100vh 等于整屏高 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: flex;        /* 开启 flex 布局 */
+  justify-content: center; /* 主轴水平居中 */
+  align-items: center;     /* 交叉轴垂直居中 */
+}
+
+/* ===== 3. 卡片主体 ===== */
+.card {
+  width: 340px;         /* 固定宽度，也可用 max-width: 90% 适配手机 */
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 20px;  /* 圆角 */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12); /* x偏移 y-offset 模糊 颜色 */
+  text-align: center;   /* 内部文本居中 */
+}
+
+/* ===== 4. 头像 ===== */
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;   /* 圆头像 */
+  object-fit: cover;    /* 保持比例裁剪 */
+}
+
+/* ===== 5. 标题 ===== */
+.card h1 {
+  margin: 15px 0 5px;   /* 上 右 下 左（省略左=右） */
+  font-size: 28px;
+  color: #333;
+}
+
+/* ===== 6. 段落 ===== */
+.card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* ===== 7. 导航列表 ===== */
+.nav {
+  list-style: none;     /* 去掉小黑点 */
+  display: flex;        /* 横向排列 */
+  justify-content: center;
+  gap: 20px;            /* flex 子元素间距 */
+  margin-bottom: 25px;
+}
+
+.nav a {
+  text-decoration: none; /* 去掉下划线 */
+  color: #0077ff;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.nav a:hover {
+  color: #0059c1;       /* 鼠标悬停变色 */
+}
+
+/* ===== 8. 输入框 & 按钮 ===== */
+input[type="text"] {
+  padding: 10px 15px;
+  width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: none;        /* 去掉聚焦时的蓝框 */
+  transition: border-color 0.3s;
+}
+input[type="text"]:focus {
+  border-color: #0077ff;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background: #0077ff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+button:hover {
+  background: #0059c1;
+}
+button:active {
+  transform: scale(0.96); /* 按下时微缩小 */
+}
+
+
+
