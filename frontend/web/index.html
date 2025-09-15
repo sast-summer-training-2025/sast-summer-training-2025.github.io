@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <!-- 1. 字符编码 & 移动端适配 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- 2. 页面标题（浏览器标签页） -->
+  <title>王小明的名片</title>
 
+  <!-- 3. 引入外部 CSS（下面会创建 style.css） -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 4. 语义化分区：section 包裹整个卡片 -->
+  <section class="card">
+    
+    <!-- 5. 头像：img 单标签，src 放图片地址，alt 无障碍文本 -->
+    <img src="IMG_6390.HEIC" alt="我的头像">
+    
+    <!-- 6. 标题层级：h1 最大，h6 最小 -->
+    <h1>王小明</h1>
+    
+    <!-- 7. 段落：p 会自动上下留白 -->
+    <p>前端初学者 / 热爱咖啡与猫</p>
+    
+    <!-- 8. 无序列表：ul 包 li，做横向导航 -->
+    <ul class="nav">
+      <li><a href="mailto:ming@example.com">📧 邮箱</a></li>
+      <li><a href="https://github.com/ming" target="_blank">🐙 GitHub</a></li>
+    </ul>
+    
+    <!-- 9. 表单：form 默认会刷新页面，这里仅做布局 -->
+    <form>
+      <!-- 10. 输入框：type="text" 单行文本；placeholder 占位符 -->
+      <input type="text" id="nameInput" placeholder="请输入你的名字">
+      
+      <!-- 11. 按钮：type="button" 不会提交表单；id 方便 JS 获取 -->
+      <button type="button" id="sayHiBtn">打招呼</button>
+    </form>
+    
+  </section>
+
+  <!-- 12. JavaScript 写在 body 结束之前，保证 DOM 已加载 -->
+  <script src="main.js"></script>
+</body>
+</html>
